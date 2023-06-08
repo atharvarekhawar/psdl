@@ -1,0 +1,15 @@
+#include<stdio.h>
+#include<stdlib.h>
+#include<pic18f4550.h>
+
+void main(void){
+    int mul,div;
+    mul=0;
+    div=0;
+    mul=0x04 * 0x01;
+    div=0x06 / 0x02;
+    TRISD=0;
+    PORTD=mul;
+    TRISC=0;
+    PORTC=div;
+}
